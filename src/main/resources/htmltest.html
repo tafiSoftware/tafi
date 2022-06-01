@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing in tafi</title>
+    <script type="text/javascript">
+function display(selected)
+  {
+  if (selected == 'button')
+    {
+    texttoshow = "the text related to first box should be displayed";
+    }
+  else if (selected == 'secondbox')
+    {
+    texttoshow = "Text related to 2nd box.";
+    }
+  document.getElementById("text").innerHTML = texttoshow;
+  }
+
+    </script>
+</head>
+<body>
+<span id="text"></span>
+<button class="button" id="button1" onclick="display('button')">A button element</button>
+<button onclick="display('secondbox')">Secondbox</button>
+<input class="checkbox" type="checkbox", id="agree"/>
+</body>
+</html>
